@@ -1,0 +1,93 @@
+/* navbar.module.css */
+.container {
+  background-color: #141B1A;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px; /* Adjust padding */
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.logo {
+  padding-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  color: #00bf63;
+}
+
+.logoutButton {
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 5px; /* Added border-radius for buttons */
+}
+
+.logoutButton:hover {
+  color: #00bf63;
+}
+
+.greenButton {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #00bf63; /* Green color */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.greenButton:hover {
+  background-color: #008e4d; /* Darker shade of green on hover */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #29323C;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid white;
+    display: none;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding-right: 20px;
+  }
+}
