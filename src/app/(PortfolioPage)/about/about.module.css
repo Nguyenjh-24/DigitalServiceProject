@@ -1,0 +1,129 @@
+/* about.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 75px;
+  background-color: transparent; /* Light background color */
+}
+
+.textContainer {
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  color: var(--btn);
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.description {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+}
+
+.missionContainer {
+  margin-top: 40px;
+}
+
+.missionTitle {
+  font-size: 36px;
+  color: #00bf63;
+  margin-bottom: 20px;
+}
+
+.missionDescription {
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+}
+
+.purposeContainer {
+  margin-top: 40px;
+}
+
+.purposeTitle {
+  font-size: 36px;
+  color: #00bf63;
+  margin-bottom: 20px;
+}
+
+.purposeDescription {
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.box h1 {
+  color: var(--btn);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.box p {
+  font-size: 16px;
+  color: white;
+}
+
+.imgContainer {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.img {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description,
+  .missionDescription,
+  .purposeDescription {
+    font-size: 16px;
+  }
+
+  .boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .imgContainer {
+    margin-top: 20px;
+  }
+}

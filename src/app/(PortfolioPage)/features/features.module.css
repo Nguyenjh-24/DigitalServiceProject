@@ -1,0 +1,233 @@
+/* General Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 155px;
+  background-color: #141B1A;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Features Container */
+.featuresContainer {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.icon {
+  font-size: 50px;
+  color: #00bf63;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Accolades Section */
+.accolades {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  color: white;
+  width: 100%;
+}
+
+.accolades h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.accolades p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.accoladesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+.accolade {
+  flex: 0 0 calc(25% - 10px);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.accolade h4 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.accolade p {
+  font-size: 14px;
+  color: white;
+}
+
+.executivesLink {
+  color: #00bf63;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+/* Testimonials Section */
+.testimonials {
+  flex: 1;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: white;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Side by Side Sections */
+.sideBySide {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.whyUs, .goal {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.whyUs h2, .goal h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.whyUs p, .goal p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Cards Container */
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 calc(50% - 10px);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.card h4 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.card p {
+  font-size: 14px;
+  color: white;
+}
+
+/* Call to Action */
+.cta {
+  flex: 1;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contactButton {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00bf63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #008e4a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 50px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+}

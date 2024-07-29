@@ -1,0 +1,240 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: transparent;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.tableContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th, .table td {
+  border: 2px solid #00bf63; /* Green border */
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.table th {
+  background-color: #00bf63;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  height: 60px;
+}
+
+.table td {
+  background-color: transparent;
+  font-size: 16px;
+  height: 60px;
+}
+
+.table .feature {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 20px; /* Increased size */
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: transparent;
+}
+
+.label, .mostPopular {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00bf63;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.mostPopular {
+  top: -35px;
+}
+
+.button {
+  margin-top: 10px; /* Adjusted button margin */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #00bf63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #00a653;
+  transform: scale(1.05);
+}
+
+.alert {
+  position: fixed;
+  top: 80px; /* Adjust top position */
+  right: 50px; /* Adjust right position */
+  background-color: rgba(255, 255, 255, 0.1); /* Light grey background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px; /* Adjust width as needed */
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.alertTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white; 
+}
+
+.alertText {
+  font-size: 14px;
+}
+
+.alertIcon {
+  font-size: 24px;
+  color: white; /* Changed icon color */
+  margin-right: 10px;
+}
+
+.closeIcon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Changed icon color */
+  margin-left: 10px; /* Adjusted left margin */
+  margin-bottom: auto; /* Align bottom */
+}
+
+.contract {
+  flex: 1;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 100px;
+  border-radius: 8px;
+  color: white;
+}
+
+.contract h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.contract {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: white;
+}
+
+.contract p {
+  font-style: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.infoIcon {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #00bf63;
+  position: relative;
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the icon */
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipWrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    top: -20px;
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .mostPopular {
+    top: -25px;
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .alert {
+    width: 100%;
+  }
+}
